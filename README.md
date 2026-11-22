@@ -1,53 +1,21 @@
-# AxoProject CBT — Project Showcase Portfolio
+# AxoProject CBT
 
-Website portofolio responsif untuk menampilkan proyek AxoProject CBT.
+**AxoProject CBT** adalah platform *Computer Based Test* (CBT) berbasis web yang dirancang untuk mendigitalisasi proses pelaksanaan ujian di lingkungan pendidikan.
 
-## Teknologi
-- React 18
-- Vite 6
-- Tailwind CSS 3
-- Lucide React
-- Inter (Google Fonts)
+Dikembangkan oleh **Alfaiz Muafy Rizqi Ramadhan**, AxoProject CBT menghadirkan sistem ujian digital terintegrasi yang menggabungkan pengelolaan peserta, manajemen bank soal, pelaksanaan ujian, pemantauan aktivitas, penilaian otomatis, dan analisis hasil ujian dalam satu platform.
 
-## Menjalankan secara lokal
-Pastikan Node.js versi 18 atau lebih baru telah terpasang.
+Aplikasi ini menyediakan dua lingkungan kerja utama, yaitu **Student Workspace** untuk siswa dan **Admin Workspace** untuk administrator. Siswa dapat mengakses ujian menggunakan akun dan token khusus, mengerjakan soal dengan sistem navigasi interaktif, serta melihat riwayat hasil ujian. Sementara itu, administrator memiliki kendali untuk mengelola ujian, mengimpor data peserta, mengatur bank soal, memantau aktivitas ujian, dan menghasilkan laporan nilai.
 
-```bash
-npm install
-npm run dev
-```
+Dibangun menggunakan React, Vite, Supabase, PostgreSQL, dan Tailwind CSS, AxoProject CBT mengutamakan pengalaman pengguna yang responsif, efisiensi pengelolaan ujian, serta keamanan pemrosesan data. Platform ini juga dirancang untuk mendukung integrasi Android native melalui Capacitor.
 
-Buka alamat lokal yang ditampilkan Vite (biasanya `http://localhost:5173`).
+### Project Vision
 
-## Build untuk deployment
-```bash
-npm run build
-npm run preview
-```
-Hasil build tersedia di folder `dist/`.
+Membangun ekosistem ujian digital yang terpusat, efisien, responsif, dan lebih aman untuk mendukung transformasi digital dalam dunia pendidikan.
 
-## Publish ke GitHub Pages
-Workflow GitHub Actions di `.github/workflows/deploy.yml` akan membangun dan menerbitkan situs setiap ada push ke branch `main`.
+### Core Principles
 
-1. Push repository ke GitHub pada branch `main`.
-2. Buka **Settings → Pages** pada repository.
-3. Pada **Build and deployment**, pilih **GitHub Actions** sebagai source.
-4. Buka tab **Actions** dan tunggu workflow **Deploy to GitHub Pages** selesai.
-
-Vite dikonfigurasi dengan base path relatif agar file JavaScript, CSS, favicon, dan gambar tetap ditemukan pada URL project GitHub Pages.
-
-## Mengganti / menambahkan screenshot
-Letakkan file gambar di `public/images/` dengan nama berikut:
-
-| Slot | Nama file | Keterangan |
-|---|---|---|
-| 1 | `axoproject-1-exam.png` | Halaman pengerjaan ujian (16:9) |
-| 2 | `axoproject-2-dashboard.png` | Dashboard siswa — sudah diisi screenshot |
-| 3 | `axoproject-3-admin.png` | Admin Workspace — sudah diisi screenshot |
-
-Jika gambar belum tersedia, placeholder akan ditampilkan otomatis.
-
-## Catatan
-- Theme switcher menyimpan pilihan `light` / `dark` pada `localStorage` dengan key `axoproject-theme`.
-- Demo live mengarah ke `https://axoproject.vercel.app`.
-- Fitur keamanan pada halaman ini merupakan dokumentasi kemampuan yang dinyatakan dalam brief proyek; klaim tersebut tetap perlu diverifikasi melalui audit implementasi sebelum digunakan sebagai pernyataan jaminan keamanan.
+- **Centralized Management** — Pengelolaan ujian dalam satu platform.
+- **Security-Oriented** — Mengutamakan validasi server dan pengendalian akses.
+- **Automation** — Mengurangi pekerjaan administratif melalui otomasi.
+- **Data-Driven Evaluation** — Mendukung evaluasi berdasarkan hasil dan analitik.
+- **Responsive Experience** — Mendukung berbagai ukuran layar dan perangkat.
